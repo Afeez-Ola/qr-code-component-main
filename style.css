@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+html,
+/* body {
+    height: 100%;
+    margin: 0;
+} */
+body{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.card{
+    position: relative;
+    transform: translateY(40%);
+    /* transform: translateX(30%); */
+    height: fit-content;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.img{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.note{
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.note h2{
+    color: var(--dark-blue);
+    font-size: 1.6rem;
+    font-weight: 900;
+    width: 80%;
+    margin: auto;
+}
+
+.note p{
+    color: var(--grayish-blue);
+    font-weight: 900;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width:700px){
+    .card{
+        width: 80%;
+        transform: translateY(10%);
+    }
+
+    .img,.note{
+        width: 100%;
+    }
+}
+
